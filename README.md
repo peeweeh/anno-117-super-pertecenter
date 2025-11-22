@@ -101,4 +101,76 @@ Special thanks to the Anno modding community for tools and support.
 
 ---
 
+## 📝 mod.io Submission Guide
+
+When uploading to mod.io, use these details:
+
+**Name:** Pentecenter Trade Booster
+
+**Summary:** Supercharged Pentecenter for rapid trade routes - 9 cargo slots, speed 30, health 4000, 10s build time
+
+**Description:**
+```html
+<p style="text-align: center;"><a href="https://ko-fi.com/mrfixit027"><img src="https://storage.ko-fi.com/cdn/brandasset/kofi_button_red.png" alt="Ko-fi" width="200" /></a></p>
+<p style="text-align: center;">⚠️ Found a bug? Report it on <a href="https://github.com/peeweeh/anno-117-super-pertecenter/issues">GitHub Issues</a> ⚠️</p>
+
+<hr />
+
+<p>Supercharge your <strong>Pentecenter</strong> trade ships for maximum efficiency! This mod buffs only the civilian Pentecenter (GUID 37222) - all other ships remain vanilla.</p>
+
+<h3>🚢 PENTECENTER STATS</h3>
+
+<ul>
+<li><strong>📦 Cargo Slots: 9</strong> - Massive trade capacity for efficient routes</li>
+<li><strong>⚡ Speed: 30.0</strong> - Lightning-fast route cycling (was ~3.0)</li>
+<li><strong>❤️ Health: 4000</strong> - Survive pirate encounters while trading</li>
+<li><strong>⏱️ Build Time: 10 seconds</strong> - Rapid fleet deployment</li>
+<li><strong>🔧 Module Slots: 2</strong> - Standard customization options</li>
+<li><strong>🔄 Enhanced Handling</strong> - Better acceleration, deceleration, and turning</li>
+</ul>
+
+<h3>✨ WHY THIS MOD ROCKS</h3>
+
+<ul>
+<li>Perfect for players who love efficient trade networks</li>
+<li>Eliminates waiting for slow trade ships</li>
+<li>Durable enough to survive incidental attacks</li>
+<li>Quick to build when you need more capacity</li>
+<li>Only affects Pentecenter - Trireme and Quinquireme stay vanilla</li>
+<li>Save Compatible - Drop it in anytime</li>
+<li>Mod Compatible - Clean ModOps, no conflicts</li>
+</ul>
+
+<h3>⚖️ BALANCE NOTES</h3>
+
+<p><strong>This is intentionally overpowered</strong> for trade convenience. If it feels too strong:</p>
+<ul>
+<li>Speed can be reduced to 6-8 for more balanced gameplay</li>
+<li>Cargo can be lowered to 6-7 slots</li>
+<li>Health can be reduced to ~1500</li>
+</ul>
+
+<p>Just enable the mod and watch your trade routes fly! ⚡🚢</p>
+```
+
+**Tags:** ships, trade, pentecenter, overpowered, quality-of-life, naval, economy
+
+**Maturity Rating:** Everyone
+
+**File to Upload:** `super-pertecenter-v1.1.0.zip` (from GitHub Releases)
+
+**Changelog (v1.1.0):**
+```
+Version 1.1.0:
+- Focused exclusively on Pentecenter (GUID 37222)
+- 9 cargo slots for high-capacity trade runs
+- Speed 30.0 for rapid route cycling
+- Health 4000 for survivability
+- Build time 10 seconds for quick deployment
+- Trireme and Quinquireme remain vanilla
+- Compatible with existing saves
+```
+
+---
+
 **Enjoy your supercharged trading fleet!** ⚓🚢
