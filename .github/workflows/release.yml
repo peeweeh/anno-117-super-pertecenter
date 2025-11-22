@@ -16,19 +16,13 @@ jobs:
       
     - name: 📦 Create release package
       run: |
-        # Create a clean directory structure for the release
-        mkdir -p release/super-pertecenter
-        
-        # Copy mod files (exclude dev files)
-        cp -r data release/super-pertecenter/
-        cp modinfo.json release/super-pertecenter/
-        cp README.md release/super-pertecenter/
-        cp LICENSE release/super-pertecenter/
-        
-        # Create zip archive
-        cd release
-        zip -r super-pertecenter-${GITHUB_REF#refs/tags/}.zip super-pertecenter/
-        cd ..
+        # Create zip file with mod files directly (no containing folder)
+        # This ensures extraction creates the mod folder in the user's mods directory
+        zip -r super-pertecenter-${GITHUB_REF#refs/tags/}.zip \
+          modinfo.json \
+          data/ \
+          README.md \
+          LICENSE
         
     - name: 📝 Extract changelog
       id: changelog
