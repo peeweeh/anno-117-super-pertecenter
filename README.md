@@ -1,6 +1,13 @@
 # ⚓ Pentecenter Trade Booster
 ### Anno 117: Pax Romana Mod
 
+[![Version](https://img.shields.io/badge/version-1.1.0-blue.svg)](https://github.com/peeweeh/anno-117-super-pertecenter/releases)
+[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+[![Anno 117](https://img.shields.io/badge/Anno%20117-Pax%20Romana-orange.svg)](https://www.anno-union.com)
+[![Ko-fi](https://img.shields.io/badge/Ko--fi-Support%20Me-FF5E5B?logo=ko-fi&logoColor=white)](https://ko-fi.com/mrfixit027)
+[![GitHub issues](https://img.shields.io/github/issues/peeweeh/anno-117-super-pertecenter)](https://github.com/peeweeh/anno-117-super-pertecenter/issues)
+[![GitHub stars](https://img.shields.io/github/stars/peeweeh/anno-117-super-pertecenter?style=social)](https://github.com/peeweeh/anno-117-super-pertecenter)
+
 ## 📖 Overview
 This mod focuses exclusively on buffing the civilian **Pentecenter** (GUID 37222) to excel as a fast, durable trade shuttle. Other Roman ships remain untouched (vanilla stats).
 
@@ -29,7 +36,7 @@ These values are intentionally powerful for trade convenience. If performance fe
 
 ## 📁 File Structure
 ```
-super-ships/
+super-pertecenter/
 ├── modinfo.json
 └── data/
     └── base/
@@ -52,9 +59,46 @@ Edit `assets.xml` and change properties under the single `<ModOp>` blocks for GU
 - ⚠️ **XML error?** Validate closing tags and GUID quotes.
 - 🔥 **Overpowered feel?** Reduce speed to 6–8 and health to ~1500.
 
+For more help, [open an issue](https://github.com/peeweeh/anno-117-super-pertecenter/issues/new/choose) on GitHub.
+
+## 🤝 Contributing
+
+We welcome contributions! Whether it's bug reports, feature suggestions, or code improvements:
+
+- 🐛 [Report a bug](https://github.com/peeweeh/anno-117-super-pertecenter/issues/new?template=bug_report.md)
+- ✨ [Request a feature](https://github.com/peeweeh/anno-117-super-pertecenter/issues/new?template=feature_request.md)
+- ⚖️ [Share balance feedback](https://github.com/peeweeh/anno-117-super-pertecenter/issues/new?template=balance_feedback.md)
+- 🔧 [Report compatibility issues](https://github.com/peeweeh/anno-117-super-pertecenter/issues/new?template=compatibility_issue.md)
+
+Please read [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines.
+
 ## 📜 Version History
-- **v1.1.0:** Scope reduced to Pentecenter only; metadata updated.
-- **v1.0.0:** Original multi-ship enhancement (deprecated).
+
+See [CHANGELOG.md](CHANGELOG.md) for detailed version history.
+
+**Latest Release:**
+- **v1.1.0** (2025-11-20): Scope reduced to Pentecenter only; metadata updated.
+- **v1.0.0** (2025-11-16): Original multi-ship enhancement (deprecated).
+
+## 📚 Documentation
+
+- 📋 [Product Requirements Document (PRD)](prd.md) - Design decisions and rationale
+- 📜 [Changelog](CHANGELOG.md) - Detailed version history
+- 🤝 [Contributing Guide](CONTRIBUTING.md) - How to contribute
+- ⚖️ [License](LICENSE) - MIT License
+
+## 🔗 Links
+
+- 🐛 [Issue Tracker](https://github.com/peeweeh/anno-117-super-pertecenter/issues)
+- 💬 [Discussions](https://github.com/peeweeh/anno-117-super-pertecenter/discussions)
+- 📦 [Releases](https://github.com/peeweeh/anno-117-super-pertecenter/releases)
 
 ## 👏 Credits
+
 Original concept and implementation by **mrfixit**.
+
+Special thanks to the Anno modding community for tools and support.
+
+---
+
+**Enjoy your supercharged trading fleet!** ⚓🚢
