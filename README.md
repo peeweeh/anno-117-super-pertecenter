@@ -157,11 +157,15 @@ When uploading to mod.io, use these details:
 
 **Maturity Rating:** Everyone
 
-**File to Upload:** `super-pertecenter-v1.1.0.zip` (from GitHub Releases)
+**File to Upload:** `super-pertecenter-v1.1.1.zip` (from GitHub Releases)
 
-**Changelog (v1.1.0):**
+**Changelog:**
 ```
-Version 1.1.0:
+## [1.1.1] - 2025-12-20
+- Fixed speed stat in modinfo.json description (30.0, not 24.0)
+- Updated release workflow for better mod.io compatibility
+
+## [1.1.0] - 2025-11-20
 - Focused exclusively on Pentecenter (GUID 37222)
 - 9 cargo slots for high-capacity trade runs
 - Speed 30.0 for rapid route cycling
@@ -169,6 +173,11 @@ Version 1.1.0:
 - Build time 10 seconds for quick deployment
 - Trireme and Quinquireme remain vanilla
 - Compatible with existing saves
+
+## [1.0.0] - 2025-11-16
+- Initial release
+- Modified Pentecenter with enhanced trade capabilities
+- Modified Trireme and Quinquireme combat stats
 ```
 
 ---
