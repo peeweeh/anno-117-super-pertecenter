@@ -1,42 +1,46 @@
-﻿name: 🏷️ Release Automation
+﻿name: Create mod.io Release
 
 on:
   push:
     tags:
-      - 'v*'
+      - 'v*.*.*'  # Triggers on version tags like v1.0.0, v1.2.3, etc.
 
 jobs:
-  create-release:
-    name: Create GitHub Release
+  build-and-release:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     
     steps:
-    - name: 📥 Checkout code
-      uses: actions/checkout@v4
+      - name: Checkout code
+        uses: actions/checkout@v4
       
-    - name: 📦 Create release package
-      run: |
-        # Create zip file with mod files directly (no containing folder)
-        # This ensures extraction creates the mod folder in the user's mods directory
-        zip -r super-pertecenter-${GITHUB_REF#refs/tags/}.zip \
-          modinfo.json \
-          data/ \
-          README.md \
-          LICENSE
-        
-    - name: 📝 Extract changelog
-      id: changelog
-      run: |
-        # Extract the latest version's changelog
-        VERSION=${GITHUB_REF#refs/tags/v}
-        awk '/## \['$VERSION'\]/,/## \[/' CHANGELOG.md | sed '1d;$d' > release-notes.md
-        
-    - name: 🚀 Create GitHub Release
-      uses: softprops/action-gh-release@v1
-      with:
-        files: release/super-pertecenter-*.zip
-        body_path: release-notes.md
-        draft: false
-        prerelease: false
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Extract version from tag
+        id: get_version
+        run: echo "VERSION=${GITHUB_REF#refs/tags/v}" >> $GITHUB_OUTPUT
+      
+      - name: Create mod.io package
+        run: |
+          # Create zip file with clean folder structure
+          # Extract will create super-pertecenter folder in mods directory
+          mkdir -p super-pertecenter
+          cp -r modinfo.json data/ README.md LICENSE CHANGELOG.md super-pertecenter/
+          zip -r super-pertecenter-v${{ steps.get_version.outputs.VERSION }}.zip super-pertecenter/
+          
+          # Show what's included
+          echo "📦 Package contents:"
+          unzip -l super-pertecenter-v${{ steps.get_version.outputs.VERSION }}.zip
+      
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: super-pertecenter-v${{ steps.get_version.outputs.VERSION }}.zip
+          body: |
+            ## Pentecenter Trade Booster v${{ steps.get_version.outputs.VERSION }}
+            
+            🎮 **Ready for mod.io!**
+            
+            ### Installation
+            1. Download `super-pertecenter-v${{ steps.get_version.outputs.VERSION }}.zip`
+            2. Extract to Anno 117 mods folder: `Documents/Anno 117 Pax Romana/mods/`
+            3. Launch game and enjoy extreme speed trading!
