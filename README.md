@@ -1,7 +1,7 @@
 # ⚓ Pentecenter Trade Booster
 ### Anno 117: Pax Romana Mod
 
-[![Version](https://img.shields.io/badge/version-1.1.0-blue.svg)](https://github.com/peeweeh/anno-117-super-pertecenter/releases)
+[![Version](https://img.shields.io/badge/version-1.1.1-blue.svg)](https://github.com/peeweeh/anno-117-super-pertecenter/releases)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 [![Anno 117](https://img.shields.io/badge/Anno%20117-Pax%20Romana-orange.svg)](https://www.anno-union.com)
 [![Ko-fi](https://img.shields.io/badge/Ko--fi-Support%20Me-FF5E5B?logo=ko-fi&logoColor=white)](https://ko-fi.com/mrfixit027)
@@ -13,9 +13,9 @@ This mod focuses exclusively on buffing the civilian **Pentecenter** (GUID 37222
 
 ## 🚢 Current Pentecenter Stats (Modified)
 - 📦 **Cargo Slots:** 9 (high throughput)
-- ⚡ **Base Speed:** 24.0 (extreme speed for rapid route cycling)
-- 🔄 **Acceleration:** 2 / **Deceleration:** 1.5
-- 🔃 **Rotation Speed:** 60 (agile turns)
+- ⚡ **Base Speed:** 30.0 (extreme speed for rapid route cycling)
+- 🔄 **Acceleration:** 3 / **Deceleration:** 3
+- 🔃 **Rotation Speed:** 50 (agile turns)
 - 🔧 **Module Slots:** 2 (standard customization retained)
 - ❤️ **Health:** 4000 (reinforced to survive incidental attacks)
 - ⏱️ **Build Time:** 10 seconds (rapid deployment)
@@ -46,7 +46,7 @@ super-pertecenter/
 ```
 
 ## ⚖️ Balance & Notes
-- ⚡ Speed 24.0 is far above normal; retained per original user request.
+- ⚡ Speed 30.0 is far above normal; retained per original user request.
 - ❤️ High health (4000) ensures survival during trade routes without making the ship offensive.
 - ⏱️ Low build time enables quick fleet scaling early.
 - 🔒 No changes to costs, upkeep, or other ships to minimize side effects.
@@ -77,6 +77,7 @@ Please read [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines.
 See [CHANGELOG.md](CHANGELOG.md) for detailed version history.
 
 **Latest Release:**
+- **v1.1.1** (2025-12-20): Speed stat corrected to 30.0 in description; workflow tweaks.
 - **v1.1.0** (2025-11-20): Scope reduced to Pentecenter only; metadata updated.
 - **v1.0.0** (2025-11-16): Original multi-ship enhancement (deprecated).
 
