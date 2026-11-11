@@ -7,6 +7,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [1.1.1] - 2025-12-20
+
+### 🐛 Fixed
+- Corrected speed text to 30.0 in mod metadata and documentation to match assets.xml
+- Updated release workflow and packaging docs
+
+### 📦 Current Stats (Pentecenter)
+- 📦 Cargo Slots: 9
+- ⚡ Base Speed: 30.0
+- 🔧 Module Slots: 2
+- ❤️ Health: 4000
+- ⏱️ Build Time: 10 seconds
+
+---
+
 ## [1.1.0] - 2025-11-20
 
 ### ✂️ Changed - Scope Reduction
